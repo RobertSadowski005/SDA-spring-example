@@ -16,6 +16,13 @@
 </head>
 <body>
     <div class="container">
+        <form class="form-horizontal" th:action="@{/products/find}" method="post">
+            <label class="col-sm-2 control-label">Description: </label>
+            <div class="col-sm-10">
+                <input type="text" class="form-horizontal" name="description"/>
+            </div>
+            <div class="col-sm-2"
+        </form>
         <div th:if="${not #lists.isEmpty(products)}">
             <h2>Product List</h2>
             <table class="table table-striped">

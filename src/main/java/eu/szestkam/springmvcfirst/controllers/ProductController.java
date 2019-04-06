@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class ProductController {
@@ -22,6 +23,13 @@ public class ProductController {
     @RequestMapping("/products")
     public String listProducts(Model model){
         model.addAttribute("products", productService.listAllProducts());
+        return "products";
+    }
+
+    @RequestMapping("/products/find")
+    public String listProductsByDescription(Model model, @RequestParam String description){
+        String like = "%"+description+"%";
+        model.addAttribute("products", productService.listAllProductsWithDescription(description));
         return "products";
     }
 
