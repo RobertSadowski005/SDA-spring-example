@@ -1,12 +1,11 @@
-package eu.szestkam.springmvcfirst.services.impl;
+package eu.smallAllegro.springmvcfirst.services.impl;
 
-import eu.szestkam.springmvcfirst.domain.Product;
-import eu.szestkam.springmvcfirst.repo.ProductRepository;
-import eu.szestkam.springmvcfirst.services.ProductService;
+import eu.smallAllegro.springmvcfirst.domain.Product;
+import eu.smallAllegro.springmvcfirst.repo.ProductRepository;
+import eu.smallAllegro.springmvcfirst.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
 import java.util.*;
 
 @Service

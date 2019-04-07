@@ -1,4 +1,4 @@
-package eu.szestkam.springmvcfirst.domain;
+package eu.smallAllegro.springmvcfirst.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

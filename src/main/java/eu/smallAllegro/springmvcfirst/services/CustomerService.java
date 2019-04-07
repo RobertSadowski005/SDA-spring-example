@@ -1,6 +1,6 @@
-package eu.szestkam.springmvcfirst.services;
+package eu.smallAllegro.springmvcfirst.services;
 
-import eu.szestkam.springmvcfirst.domain.Customer;
+import eu.smallAllegro.springmvcfirst.domain.Customer;
 
 import java.util.List;
 

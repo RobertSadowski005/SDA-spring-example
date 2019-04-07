@@ -1,6 +1,6 @@
-package eu.szestkam.springmvcfirst.repo;
+package eu.smallAllegro.springmvcfirst.repo;
 
-import eu.szestkam.springmvcfirst.domain.Customer;
+import eu.smallAllegro.springmvcfirst.domain.Customer;
 import org.springframework.data.repository.CrudRepository;
 
 public interface CustomerRepository extends CrudRepository<Customer, Integer> {

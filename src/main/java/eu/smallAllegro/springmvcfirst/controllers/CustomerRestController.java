@@ -1,7 +1,7 @@
-package eu.szestkam.springmvcfirst.controllers;
+package eu.smallAllegro.springmvcfirst.controllers;
 
-import eu.szestkam.springmvcfirst.domain.Customer;
-import eu.szestkam.springmvcfirst.services.CustomerService;
+import eu.smallAllegro.springmvcfirst.domain.Customer;
+import eu.smallAllegro.springmvcfirst.services.CustomerService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

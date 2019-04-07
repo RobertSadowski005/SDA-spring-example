@@ -1,8 +1,8 @@
-package eu.szestkam.springmvcfirst.services.impl;
+package eu.smallAllegro.springmvcfirst.services.impl;
 
-import eu.szestkam.springmvcfirst.domain.Customer;
-import eu.szestkam.springmvcfirst.repo.CustomerRepository;
-import eu.szestkam.springmvcfirst.services.CustomerService;
+import eu.smallAllegro.springmvcfirst.domain.Customer;
+import eu.smallAllegro.springmvcfirst.repo.CustomerRepository;
+import eu.smallAllegro.springmvcfirst.services.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package eu.szestkam.springmvcfirst;
+package eu.smallAllegro.springmvcfirst;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

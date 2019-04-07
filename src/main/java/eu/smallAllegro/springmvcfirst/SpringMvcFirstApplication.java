@@ -1,4 +1,4 @@
-package eu.szestkam.springmvcfirst;
+package eu.smallAllegro.springmvcfirst;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,8 +1,7 @@
-package eu.szestkam.springmvcfirst.security;
+package eu.smallAllegro.springmvcfirst.security;
 
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
@@ -24,6 +23,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .hasRole("CUSTOMER")
                 .antMatchers("/product/**","/products/**")
                     .hasRole("PRODUCT")
+                .antMatchers("/api/**")
+                .hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()
                     .formLogin().permitAll()
@@ -38,7 +39,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .exceptionHandling()
                     .accessDeniedPage("/login")
                 .and()
-                    .headers().frameOptions().disable();
+                    .headers().frameOptions().disable().and().httpBasic();
 
     }
 

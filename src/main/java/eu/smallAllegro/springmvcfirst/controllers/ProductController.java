@@ -1,7 +1,7 @@
-package eu.szestkam.springmvcfirst.controllers;
+package eu.smallAllegro.springmvcfirst.controllers;
 
-import eu.szestkam.springmvcfirst.domain.Product;
-import eu.szestkam.springmvcfirst.services.ProductService;
+import eu.smallAllegro.springmvcfirst.domain.Product;
+import eu.smallAllegro.springmvcfirst.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,7 +28,7 @@ public class ProductController {
 
     @RequestMapping("/products/find")
     public String listProductsByDescription(Model model, @RequestParam String description){
-        String like = "%"+description+"%";
+//        String like = "%"+description+"%"; /* like miał iść zamiast description gdy klasa findByDescriptionContaining była findByDescriptionLike */
         model.addAttribute("products", productService.listAllProductsWithDescription(description));
         return "products";
     }
